@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+  background-image: url("images/bc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.quiz-container {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 4px dashed #1d8b07;
+  max-width: 700px;
+  margin: auto;
+  animation: popIn 0.6s ease;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.question {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid #a3d977;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  padding: 6px 10px;
+  background-color: #f0f8e2;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.options label:hover {
+  background-color: #d6f5b0;
+}
+
+#submit {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#submit:hover {
+  background-color: #ffdd33;
+  transform: scale(1.05);
+}
+
+#hide,
+#restart {
+  background-color: #ff9966;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#hide:hover,
+#restart:hover {
+  background-color: #ffb380;
+  transform: scale(1.05);
+}
+
+#restart {
+  background-color: #7066ff;
+}
+
+#restart:hover {
+  background-color: #99b2f8;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}
